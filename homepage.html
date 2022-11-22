@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LEGO</title> 
+<link href="homepage.css" rel="stylesheet" type="text/css">
+  <a href=privacy.html></a>
+</head>
+<body>
+<!-- The first section-->
+<section> 
+<div class="container"> 
+  <!-- Navigation -->
+  <header>      
+    <nav>
+      <ul>
+          <li> <a href="#contact">CONTACT</a></li>
+          <li><a href="fleet.html">FLEET</a></li>
+          <li><a href="privacy.html">TERMS AND CONDITIONS</a></li>
+          <li><a href="bookingform.html">RESERVATION</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li style="float:left; color: red; font-size: 30px">&copy;LEGO</li>
+
+      </ul>
+    </nav>
+  </header>
+</div>
+
+  <!-- home Section -->
+  <div class="home" id="home" style="background-image: url(images/car.jpg); background-size: cover; padding: 00; margin:00" >
+         <h1 style="color:grey; font-size: 150px; text-align: center"> LEGO CAR <br> HIRE</h1>
+         <h3 style="color: grey;font-size:50px;text-align:center">Happy to serve you</h3>
+       </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">Renting a car with LEGO will give you the freedom to get to the heart of this incredible
+       part of the world. Use your hired car to discover the best that Kenya has to offer, from its natural beauty to its amazing different ethnicities.</p>
+    <p class="text_column">It has never been easier to find a rental car in Kenya. We offer you competitive prices and ensure quality and 
+      efficiency at all times. Rent a car with us today and enjoy your holiday, or get anywhere in time for your business meetings. </p>
+    <p class="text_column"> At Lego, we understand that travelling can be a hassle if you are not well organized, which is why we provide a 
+      variety of car types to compare and choose from for all types of travellers, and also offer drop off and pick-up services. </p>
+  </section>
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+   
+    <div class="thumbnail" style="margin-left: 25%;">
+      <h1 class="stats">102</h1>
+      <h4>LEGO</h4>
+      <p>Happy customers served</p>
+    </div>
+    <div class="thumbnail" style="margin-right: 25%;">
+      <h1 class="stats">****</h1>
+      <h4>LEGO</h4>
+      <p>Overall Rating</p>
+    </div>
+  </div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" style="background-color: beige">
+
+    <!-- Full-width images with number and caption links which open to the fleet -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/classa2.jpg" style="width:100%; height: 600px">
+      <div class="text"><a href="fleet.html #Class A" style="text-decoration: none; color: black; font-size: 30px">Class A</a></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/axio.jpg" style="width:100%; height: 600px">
+      <div class="text"><a href="fleet.html #Class B" style="text-decoration: none; color: black; font-size: 30px">Class B</a></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/classc5.jpg" style="width:100%; height: 600px">
+      <div class="text"><a href="fleet.html #Class C" style="text-decoration: none; color: black; font-size: 30px">Class C</a></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> 
+   
+  <!-- A javascript code to man the functioning of the slide images -->
+   <script>
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} </script>
+    
+    
+  <!-- Footer Section -->
+  <section>
+         
+
+ <footer>
+  <div class="copyright">
+      <p>
+          <ul  class="list" id="contact"  style="list-style:none;">
+          <li>Head Office</li>
+          <li>Address: Kamburu Road, Off Ngong Road, Blue Violets Plaza</li>
+          <li>Phone:0757183027 / 0773128969</li>
+          <li>Email: carhire@legorentals.com</li>
+        </ul>
+        </p>
+        
+      
+          <p  style="margin-left: 70%; margin-top: -7%; color: black">FOR THE LATEST NEWS &amp; UPDATES</p>
+          <div  style="margin-left: 70%;"><button class="btn"><a href="signup.html" style="text-decoration: none">Create an account</a></button></div><br><br>
+          
+          <p style="margin-top:5px;">&copy;2022  LEGO CAR HIRE.  All Rights Reserved</p></div>
+  </footer>
+</section>
+<!-- Main Container Ends -->
+</body>
+</html>

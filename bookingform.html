@@ -1,0 +1,231 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Booking form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <!-- This is a link from which we obtain the home icon -->
+    </head>    
+    <body>        
+        <div class="box">
+                 <!-- inserts the home icon from fontawesome -->
+            <a href="homepage.html" class="btn"><i class="fa fa-home"></i></a>                 
+            <h2>Booking Form</h2>
+            
+            <form action="bookingform.php" method="POST">     
+                             
+                    
+                    <table style="width: 100%; padding: 5px; margin-bottom: 10px">
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td><label>Phone number</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  name="Email_address" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="Please enter the correct email format"></td>
+                            <td><input type="tel" name="telephone_number"  pattern="[0-9]{0}[0-9]{10}" required title="Please enter 10 digits"></td>
+                        </tr>
+                        <tr>
+                            <td><label>First name</label></td>
+                            <td><label>ID/Passport number</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="firstName" required></td>
+                            <td><input type="text" name="idNumber"  pattern="[0-9]{0}[0-9]{8}" required title="Please enter 8 digits"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Pick up location</label></td>
+                            <td><label>Drop off location</label></td>
+                        </tr>
+                        <tr>
+                            <td><select name="pickUpLocation" style="font-size: 14px; text-indent: 20px" required>
+                                <option value="Machakos">Machakos</option>
+                                <option value="Juja">Juja</option>
+                                <option value="Nairobi">Nairobi</option>
+                                <option value="Kisumu">Kisumu</option>
+                            </select></td>
+                            <td><select name="dropOffLocation" style="font-size: 14px; text-indent: 20px" required>
+                                    <option value="Machakos">Machakos</option>
+                                    <option value="Juja">Juja</option>
+                                    <option value="Nairobi">Nairobi</option>
+                                    <option value="Kisumu">Kisumu</option>
+                                </select></td>
+                        </tr>
+                    </table>                         
+                 <table style="width: 100%; padding: 5px">
+                    <tr>
+                       <td><label>Pick-up date</label></td>
+                       <td><label>Hour</label></td>
+                       <td><label>Minute</label></td>                     
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="pickDate" style="font-size: 18px; border: 2px solid rgb(242, 245, 247); text-indent: 20px" required></td>
+                        <td><select name="pickUpHour">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7" >7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11 </option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="00">00</option>   
+                            </select> </td>
+                        <td><select name="pickUpMinute">
+                              <option value="00">00</option>
+                              <option value="05">05</option>
+                              <option value="10">10</option>
+                              <option value="15">15</option>
+                              <option value="20">20</option>
+                              <option value="25">25</option>
+                              <option value="30">30 </option>
+                              <option value="35">35</option>
+                              <option value="40">40</option>
+                              <option value="45">45</option>
+                              <option value="50">50</option>
+                              <option value="55">55</option>
+                            </select></td>                        
+                    </tr>
+                  </table>  
+                  <table style="width: 100%; padding: 5px">
+                    <tr>
+                        <td style="color: white; font-size: 18px">Hiring hours &nbsp;<input type="number" name="hourNumber" value="2" min="0" max="12" style="width: 70px"></td>
+                        <td style="color: white; font-size: 18px">Days &nbsp;<input type="number" name="daysNumber" value="2" min="0" max="20" style="width: 70px"> </td>
+                        <td style="color: white; font-size: 18px">Chauffer? <input type="checkbox" name="chauffer" value="chauffer"></td> 
+                        <td style="color: white; font-size: 18px">capacity<input type="number" name="capacity" min="1" max="10" value="2" style="width: 70px"></td>                    
+                    </tr>
+                  </table>    
+                <div><input type="checkbox" required> I have read and understood the 
+                    <a href="privacy.html" style="color: red; font-size: 16px">terms and conditions</a></div>                 
+                <input type="submit" value="Book Now">            
+            </form>       
+         </div>            
+    </body>
+    <style>
+
+ /*style the home icon*/
+.btn {
+    float: right;
+  background: transparent; /*Removes background */
+  border: none; 
+  color: white; 
+  padding: 0px 0px; 
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.fa{
+    font-size: 40px;  /*change the size of the icon*/  
+}
+.btn:hover {
+  background-color: RoyalBlue; /* Darker background on icons on mouse-over */
+} 
+.box a 
+{
+    font-size:18px; 
+    color: white;
+}
+/*styling the body*/
+body
+{
+    margin-top: 50px;
+    padding: 0;
+    font-family: times new roman;
+    background: url(images/car.jpg);
+    background-size: cover; 
+}
+
+/*style the box holding the body of the form*/
+.box
+    {
+        position: relative;
+        top: 60%;
+        left: 30%;
+        width: 550px;
+        padding: 40px;
+        background:rgba(95, 92, 92, 0.7);
+        box-sizing: border-box;
+        box-shadow: 0 5px 5px rgba(0,0,0);
+        border-radius: 10px;
+        border-style: hidden;        
+    }
+.box h2 /*style the heading booking form*/
+{
+    margin: 0 0 20;
+    padding: 0;
+    text-align: left;
+    color: aqua;      
+}
+
+.box  input /*style the input on the form*/
+{    
+    padding:10px;
+    font-size: 16px; 
+    color: white;
+    border: 2px solid rgb(242, 245, 247);
+    outline: none;
+    background: none;
+    margin-bottom:10px;
+    width: 95%;    
+}
+
+.box input[type="checkbox"]
+{width: 0%;}
+/*style the date input type*/
+table input[type="date"]
+{
+
+width: 90%;
+height: 35px;
+border:black;
+font-size: 15px;
+}
+/*style the select input type*/
+select{
+    
+    width: 90%;
+    background: none;
+    height: 30px;
+    font-size: 14px;
+    border: 2px solid rgb(242, 245, 247);
+    color: white;
+}
+/*style the lables on the form*/
+ label
+{
+    position: relative;    
+    padding:10px 0;
+    font-size: 16px; 
+    color:white;
+    pointer-events: none;
+    transition: .5s;
+}
+/*to tyle the book now button*/
+.box input[type="submit"] 
+{
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: black;
+    background-color: orangered;
+    font-size: 15px;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 20px;    
+}
+ </style>
+</html>
